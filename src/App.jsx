@@ -16,25 +16,30 @@ function App() {
 
   const [joke, setJoke] = useState('');
   // Load a joke on page load using useEffect
-  useEffect(() => {
+  const getJoke = () => {
     fetch('https://api.chucknorris.io/jokes/random')
       .then(response => response.json())
       .then(data => setJoke(data.value))
-  }, [])
+      .then(setCopied(false))
+  }
+  useEffect(getJoke, [])
+
+  const [copied, setCopied] = useState(false);
 
   return (
     <div className="App">
+      <img src="./Illustration.png" width={"120px"} alt="Chuck Norris API Illustration" />
       <div className="titles">
         <Title title="Joke Norris" />
         <Subtitle subtitle = "Chuck Norris Joke Generator" />
       </div>
       {/* Display description only on desktop using js*/}
       {window.innerWidth > 768 && description}
-      <img src="./Illustration.png" alt="Chuck Norris API Illustration" />
       <div className="jokeContainer">
         <Joke content={joke} />
-        <Button value="Copia 📋" onClick={() => navigator.clipboard.writeText(joke)} />
+        <Button value={copied ? "Copiato ✅" : "Copia 📋"} disabled={copied} onClick={() => {navigator.clipboard.writeText(joke);setCopied(true)}} />
       </div>
+      <Button value="Carica joke" onClick={getJoke} />
     </div>
   )
 }
