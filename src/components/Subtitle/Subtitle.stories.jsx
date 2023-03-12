@@ -1,5 +1,3 @@
-// Button.stories.js|jsx
-
 import { React, useState } from 'react';
 
 import Subtitle from './Subtitle.jsx'
