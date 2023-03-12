@@ -1,0 +1,21 @@
+button.btn{
+    /* Remove user agent */
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+
+    align-self: stretch;
+
+    background: #931F1D;
+    border-radius: 20px;
+    color: #D5DDBC;
+
+    font-family: 'Chuck Norris', sans-serif;
+    font-size: 1.2rem;
+}
