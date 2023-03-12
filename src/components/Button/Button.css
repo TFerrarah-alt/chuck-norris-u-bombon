@@ -10,8 +10,6 @@ button.btn{
     align-items: center;
     padding: 1rem 1rem;
 
-    align-self: stretch;
-
     background: #931F1D;
     border-radius: 20px;
     color: #D5DDBC;
