@@ -1,11 +1,12 @@
-div.joke{
+textarea.joke{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 7px 14px;
 
     width: 553px;
-    min-height: 2rem;
+    min-height: 10rem;
+    resize: none;
 
     background: #FFFFFF;
     border: 3px solid #000000;

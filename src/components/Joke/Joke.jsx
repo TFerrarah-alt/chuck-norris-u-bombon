@@ -3,9 +3,7 @@ import './Joke.css';
 
 function Joke({content}) {
     return (
-        <div className='joke'>
-            {content}
-        </div>
+        <textarea disabled value={content} className='joke'/>
     );
 }
 
