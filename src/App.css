@@ -41,3 +41,14 @@
 .jokeContainer > *{
   align-self: stretch;
 }
+
+@media screen and (max-width: 768px) {
+    .jokeContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .jokeContainer > *{
+      align-self: unset;
+    }
+}
