@@ -1,0 +1,19 @@
+div.joke{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 7px 14px;
+
+    width: 553px;
+    min-height: 2rem;
+
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 10px;
+
+    font-family: 'SF Pro Display', -apple-system, sans-serif;
+    font-weight: medium;
+    font-size: 1.5rem;
+
+    color: #000000;
+}
