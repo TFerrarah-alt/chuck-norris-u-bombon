@@ -15,4 +15,5 @@ export const Normal = Template.bind({});
 
 Normal.args = {
     subtitle: "Chuck Norris Joke Generator",
+    size: "1.5rem"
 };

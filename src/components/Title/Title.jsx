@@ -1,9 +1,9 @@
 import React from 'react';
 import './Title.css';
 
-function Title({title}) {
+function Title({title, size}) {
     return (
-        <h1>{title}</h1>
+        <h1 style={{fontSize: size}} >{title}</h1>
     );
 }
 

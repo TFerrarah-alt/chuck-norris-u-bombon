@@ -15,4 +15,5 @@ export const Normal = Template.bind({});
 
 Normal.args = {
     title: "Joke Norris",
+    size: "2rem"
 };
