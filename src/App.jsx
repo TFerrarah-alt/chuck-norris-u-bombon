@@ -37,9 +37,9 @@ function App() {
       {window.innerWidth > 768 && description}
       <div className="jokeContainer">
         <Joke content={joke} />
-        <Button value={copied ? "Copiato ✅" : "Copia 📋"} disabled={copied} onClick={() => {navigator.clipboard.writeText(joke);setCopied(true)}} />
+        <Button size={"small"} value={copied ? "Copiato ✅" : "Copia 📋"} disabled={copied} onClick={() => {navigator.clipboard.writeText(joke);setCopied(true)}} />
       </div>
-      <Button value="Carica joke" onClick={getJoke} />
+      <Button value="Carica joke" onClick={getJoke} width={"40%"} size={'large'}/>
     </div>
   )
 }
