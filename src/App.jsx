@@ -5,6 +5,7 @@ import Subtitle from './components/Subtitle/Subtitle'
 import Paragraph from './components/Paragraph/Paragraph'
 import Joke from './components/Joke/Joke'
 import Button from './components/Button/Button'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -35,11 +36,12 @@ function App() {
       </div>
       {/* Display description only on desktop using js*/}
       {window.innerWidth > 768 && description}
-      <div className="jokeContainer">
+      <div className="jokeContainer" >
         <Joke content={joke} />
         <Button size={"small"} value={copied ? "Copiato ✅" : "Copia 📋"} disabled={copied} onClick={() => {navigator.clipboard.writeText(joke);setCopied(true)}} />
       </div>
-      <Button value="Carica joke" onClick={getJoke} width={"40%"} size={'large'}/>
+      <Button value="Carica joke" onClick={getJoke} width={window.innerWidth > 768 ? "40%" : "100%"} size={'large'}/>
+      <Footer />
     </div>
   )
 }
