@@ -13,3 +13,10 @@
 
   background-color: #D5DDBC;
 }
+
+.titles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
