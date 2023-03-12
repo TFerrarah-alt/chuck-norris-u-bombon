@@ -28,5 +28,12 @@
   display: flex;
   flex-direction: column;
   
+  gap: .5rem;
+}
+
+.jokeContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 1.5rem;
 }
